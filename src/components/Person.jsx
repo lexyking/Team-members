@@ -8,9 +8,8 @@ function Person(props) {
             <h1>Hi I'm {name}</h1>
             <img src={url} />
             <article>
-                <h4>{name}</h4>
                 <h4>{job}</h4>
-                <h4>{quote}</h4>
+                <h4 className="quote">{quote}</h4>
             </article>
         </div>
     )
