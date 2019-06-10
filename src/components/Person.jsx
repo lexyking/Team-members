@@ -1,14 +1,16 @@
 import React from 'react';
 
-function Person() {
-    const url = "https://randomuser.me/api/portraits/thumb/men/65.jpg";
+function Person(props) {
+    const { img, name, job, quote } = props.teamMember;
+    const url = `https://randomuser.me/api/portraits/thumb/men/${img}.jpg`;
     return (
         <div className="person">
-            <h1>I am a person</h1>
+            <h1>Hi I'm {name}</h1>
             <img src={url} />
             <article>
-                <h4>name</h4>
-                <h4>job</h4>
+                <h4>{name}</h4>
+                <h4>{job}</h4>
+                <h4>{quote}</h4>
             </article>
         </div>
     )
