@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-  height: 100vh;
+  min-height: calc(100vh - 8rem);
   display: flex;
   flex-wrap: wrap;
    justify-content: center; 
@@ -32,13 +32,26 @@ body{
   border: 0.1rem solid #E2DE84;
 }
 
-.person  h4, .person h1 {
+h4, h1 {
   text-transform: capitalize;
   margin: 0.5rem 0;
   letter-spacing: 0.15rem;
   color: #E2DE84;
 }
 
+.quote{
+  color: #A6A670;
+}
+
 .person:hover {
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.header, .footer{
+  height: 4rem;
+  background: #86836D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #E2DE84;
 }
